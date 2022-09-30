@@ -1,0 +1,13 @@
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'PT Sans', sans-serif;
+*/
+
+h2 {
+    color: red;
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+}
