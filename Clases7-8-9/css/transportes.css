@@ -189,6 +189,7 @@ h2 {
 
 .datos ul li {
     font-size: 13px;
+    padding-top: 5px;
 }
 
 .formulario p {
@@ -197,9 +198,68 @@ h2 {
 
 .formulario p label {
     min-width: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .formulario p input,
 .formulario p textarea {
     width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario input[type="submit"] {
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px gray;
+    color: white;
+    font-size: 16px;
+    width: auto;
+    margin-left: 80px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #2e64a1;
+}
+
+.galeria {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.galeria .imagen {
+    width: 160px;
+    height: 150px;
+    margin-top: 20px;
+    border: 2px solid #999;
+    display: flex;
+    justify-items: center;
+}
+
+.galeria .imagen img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.galeria .imagen img:hover {
+    transform: scale(1.1);
+    box-shadow: -5px -11px 120px 0px rgba(0, 0, 0, 0.75);
 }
